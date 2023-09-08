@@ -8,7 +8,7 @@
         "production": true,
         "release/*": true
       },
-      "required_approvals": 3,
+      "required_approvals": 4,
       "squash_merge": true,
       "collaborators": ["user1", "user2"]
     },
@@ -19,7 +19,7 @@
         "production": true,
         "release/*": false
       },
-      "required_approvals": 2,
+      "required_approvals": 5,
       "squash_merge": false,
       "collaborators": ["user3"]
     }
