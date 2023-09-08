@@ -3,7 +3,7 @@ import json
 import requests
 
 # GitHub Personal Access Token für Authentifizierung
-access_token = os.environ.get('SECOND')
+access_token = os.environ.get('secrets.SECOND')
 
 # Lese die Konfigurationsdatei ein
 with open("project/settings.json", "r") as config_file:
