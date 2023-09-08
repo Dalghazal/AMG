@@ -10,7 +10,7 @@ with open("project/settings.json", "r") as config_file:
     config = json.load(config_file)
 
 # GitHub API-Endpunkt für Repository-Einstellungen
-api_url = "https://api.github.com/repos"
+api_url = "https://api.github.com/users/Dalghazal/repos"
 
 # Funktion zum Aktualisieren der Repository-Einstellungen
 def update_repository_settings(repo_config):
