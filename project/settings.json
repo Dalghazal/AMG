@@ -1,0 +1,26 @@
+{
+  "repositories": [
+    {
+      "name": "repo1",
+      "branch_protection": {
+        "develop": true,
+        "production": true,
+        "release/*": true
+      },
+      "required_approvals": 2,
+      "squash_merge": true,
+      "collaborators": ["user1", "user2"]
+    },
+    {
+      "name": "repo2",
+      "branch_protection": {
+        "develop": false,
+        "production": true,
+        "release/*": false
+      },
+      "required_approvals": 1,
+      "squash_merge": false,
+      "collaborators": ["user3"]
+    }
+  ]
+}
