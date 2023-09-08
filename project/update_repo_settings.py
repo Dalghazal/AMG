@@ -16,7 +16,7 @@ for repo_config in config["repositories"]:
     branch_protection = json.dumps(repo_config["branch_protection"])
     
     # Konstruiere den GitHub CLI-Befehl
-      command = f"{gh_command} {repo_name} -b '{branch_protection}' --required-approvals {repo_config['required_approvals']} --squash-merge {repo_config['squash_merge']} --collaborators {collaborators}"
+    command = f"{gh_command} {repo_name} -b '{branch_protection}' --required-approvals {repo_config['required_approvals']} --squash-merge {repo_config['squash_merge']} --collaborators {collaborators}"
 
     # Führe den Befehl aus
     result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
