@@ -24,6 +24,6 @@ jobs:
 
       - name: Update Repository Settings
         env:
-          GITHUB_TOKEN: ${{ secrets.SECOND }}
+          GITHUB_TOKEN: ${{secrets.SECOND}}
         run: |
           python ./project/update_repo_settings.py
