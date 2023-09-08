@@ -6,7 +6,17 @@ on:
       - main
 
 jobs:
+
+#  setup-cli:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Set up GitHub CLI
+#        uses: actions/setup-gh@v1
+#        with:
+#          gh-version: 'X.Y.Z' # Version von GitHub CLI angeben
+
   update-settings:
+#    needs: setup-cli
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -16,4 +26,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Hier den Code einfügen, um die Repository-Einstellungen zu aktualisieren
+          # Führen Sie Ihr Python-Skript aus
+          python update_repo_settings.py
