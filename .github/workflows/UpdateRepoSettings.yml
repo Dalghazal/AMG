@@ -1,0 +1,19 @@
+name: Update Repo Settings
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-settings:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Update Repository Settings
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Hier den Code einfügen, um die Repository-Einstellungen zu aktualisieren
