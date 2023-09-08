@@ -26,5 +26,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Führen Sie Ihr Python-Skript aus
           python update_repo_settings.py
