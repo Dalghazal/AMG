@@ -3,7 +3,7 @@ import json
 import subprocess
 
 # Lese die Konfigurationsdatei ein
-with open("settings.json", "r") as config_file:
+with open("project/settings.json", "r") as config_file:
     config = json.load(config_file)
 
 # GitHub CLI-Befehl für das Aktualisieren von Repository-Einstellungen
